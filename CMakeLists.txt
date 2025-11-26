@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.14)
-project(mathlib)
+project(ExposicionPOO)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(mathlib STATIC src/math.cpp)
+add_library(suma STATIC src/suma.cpp)
 enable_testing()
 
 # Usando FetchContent para GoogleTest
@@ -14,7 +14,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-add_executable(runTests test/test_math.cpp)
+add_executable(runTests test/test_suma.cpp)
 target_link_libraries(runTests PRIVATE mathlib gtest_main)
 
 include(GoogleTest)
