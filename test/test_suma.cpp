@@ -1,4 +1,4 @@
-#include "src/suma.cpp"
+#include "src/suma.h"
 #include <gtest/gtest.h>
 
 TEST(sumaTest, SumaBasica) {
