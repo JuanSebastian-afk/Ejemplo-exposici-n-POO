@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 add_library(suma_lib src/suma.cpp)
+target_include_directories(suma_lib PUBLIC src)
 
 include(FetchContent)
 
